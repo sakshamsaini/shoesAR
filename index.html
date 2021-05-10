@@ -42,19 +42,26 @@
     <img class="header_logo" src="image.png"></img>
     <div id="card">
       <model-viewer
-        src= "https://cdn.glitch.com/5f94c02f-1cbb-485c-a4b9-0b727526843c%2FAppscrip%20Logo%203D%20colors%20export%201.glb?v=1619515082596"
-"
-        ios-src="https://cdn.glitch.com/5f94c02f-1cbb-485c-a4b9-0b727526843c%2FAppscrip%20Logo%203D%20colors%20export%201.usdz?v=1619515081195"
-        alt="Appscrip"
-        shadow-intensity="1"
-        exposure="1"
-        camera-controls
-        interaction-prompt="none"
-        autoplay
-        ar
-        ar-modes="scene-viewer quick-look"
-        ar-placement="wall"
-        animation-crossfade-duration="0"
+        camera-controls src="https://cdn.khronos.org/assets/blog/live-gltf-asset-editing-in-your-browsereven-in-ar/street.glb"
+           alt="A 3D model of a shoe" 
+           ar camera-orbit="33deg 67deg auto"
+           poster="https://cdn.khronos.org/assets/blog/live-gltf-asset-editing-in-your-browsereven-in-ar/shoePoster.png"
+           ios-src="https://cdn.khronos.org/assets/blog/live-gltf-asset-editing-in-your-browsereven-in-ar/street.usdz" shadow-intensity="1">
+          <button slot="ar-button" class="ar-button">View in your space</button>
+          <div id="ar-prompt">
+          <img src="https://cdn.khronos.org/assets/blog/live-gltf-asset-editing-in-your-browsereven-in-ar/hand.png">
+          </div>
+          <div id="controls">
+          <label for="diffuse">Style: </label>
+          <select id="diffuse">
+            <option value="https://cdn.khronos.org/assets/blog/live-gltf-asset-editing-in-your-browsereven-in-ar/street-basecolor.jpg">Street
+            </option>
+            <option value="https://cdn.khronos.org/assets/blog/live-gltf-asset-editing-in-your-browsereven-in-ar/midnight-basecolor.jpg">
+                Midnight</option>
+            <option value="https://cdn.khronos.org/assets/blog/live-gltf-asset-editing-in-your-browsereven-in-ar/beach-basecolor.jpg">Beach
+            </option>
+         </select>
+    </div>
       ></model-viewer>
 
       <section class="attribution">
